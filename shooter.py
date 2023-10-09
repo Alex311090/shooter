@@ -12,7 +12,7 @@ screen = pygame.display.set_mode((screen_width, screen_height))  # Создан�
 def sound_path(file):
     if hasattr(sys, "_MEIPASS"):
         return os.path.join(sys._MEIPASS, file)
-    return os.path.join('sounds', file)
+    return os.path.join(os.getcwd(),'sounds', file)
 
 
 bg_sound = pygame.mixer.Sound(sound_path('sound.mp3'))
@@ -32,7 +32,7 @@ bonus_sound.set_volume(1.1)
 def font_path(file):
     if hasattr(sys, "_MEIPASS"):
         return os.path.join(sys._MEIPASS, file)
-    return os.path.join('fonts', file)
+    return os.path.join(os.getcwd(),'fonts', file)
 
 
 game_over_font = pygame.font.Font(font_path('Roboto-Black.ttf'), 80)
@@ -43,7 +43,7 @@ game_score_font = pygame.font.Font(font_path('Roboto-Black.ttf'), 25)
 def recurse_path(file):
     if hasattr(sys, "_MEIPASS"):
         return os.path.join(sys._MEIPASS, file)
-    return os.path.join('images', file)
+    return os.path.join(os.getcwd(),'images', file)
 
 
 icon = pygame.image.load(recurse_path('icon.png'))
