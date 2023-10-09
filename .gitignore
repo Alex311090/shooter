@@ -1,0 +1,10 @@
+/venv/
+/.idea/
+/fonts/
+/images/
+/sounds/
+shooter.ico
+asteroid.py
+main.py
+reserve.py
+test.py
