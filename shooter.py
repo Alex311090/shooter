@@ -308,7 +308,6 @@ while game_is_running:
                 if level == 3:
                     game_score += 3
                     score += 3
-                print(score)
                 alien_death = False
                 if game_score % 2 == 0:  # 265
                     if alien_speed <= 2.5:
@@ -362,7 +361,6 @@ while game_is_running:
             alien_y = 0 - alien_height
             if level > 1:
                 level -= 1
-                print(level)
             elif len(lives) > 0:
                 lives.pop()
             else:
